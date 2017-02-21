@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.demo.maat.hello_rxjava">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RxJavaMainActivity"
+            android:label="RxJava"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".SchedulerActivity"
+            android:label="Scheduler"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".Operators1Activity"
+            android:label="Operators"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".Operators2Activity"
+            android:label="Operators"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".PollingActivity"
+            android:label="Polling"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".DebounceEditTextActivity"
+            android:label="Debounce"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".RxJavaRetrofitActivity"
+            android:label="RxJavaRetrofit"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".RxAndroidActivity"
+            android:label="RxJavaRetrofit"
+            android:launchMode="singleTop"/>
+    </application>
+
+</manifest>
